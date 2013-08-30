@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="f03958dd-4218-40d0-84f6-44ee6b9098cd" Name="Solicitud de Licencia de Vacaciones" xmlns="http://www.wfmc.org/2009/XPDL2.2">
+  <PackageHeader>
+    <XPDLVersion>2.2</XPDLVersion>
+    <Vendor>Bizagi Process Modeler.</Vendor>
+    <Created>2010-12-15T17:14:13.9337307+01:00</Created>
+    <ModificationDate>2012-11-07T20:58:06.2416915+01:00</ModificationDate>
+    <Description>Solicitud de Licencia de Vacaciones</Description>
+    <Documentation />
+  </PackageHeader>
+  <RedefinableHeader>
+    <Author>BizAgi Process Modeler.</Author>
+    <Version>1.0</Version>
+    <Countrykey>CO</Countrykey>
+  </RedefinableHeader>
+  <ExternalPackages />
+  <Participants>
+    <Participant Id="5f8b49cb-605f-4de3-b7ae-e2399fb7b361" Name="Requester">
+      <ParticipantType Type="ROLE" />
+      <Description />
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="Requester" />
+      </ExtendedAttributes>
+    </Participant>
+    <Participant Id="a28474ca-c66d-499b-bd65-3b168cdd5135" Name="Human Reosurces">
+      <ParticipantType Type="ROLE" />
+      <Description />
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="Human_Reosurces" />
+      </ExtendedAttributes>
+    </Participant>
+    <Participant Id="4b0c02db-9d9b-46b2-9e9f-dd890a0813b8" Name="Boss">
+      <ParticipantType Type="ROLE" />
+      <Description />
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="Boss" />
+      </ExtendedAttributes>
+    </Participant>
+  </Participants>
+  <Pools>
+    <Pool Id="ca53002b-b32a-4291-843b-35210b2e99f8" Process="c6eb8593-b6c1-4b0a-a282-c07a2a3f716d" BoundaryVisible="false">
+      <Lanes />
+      <NodeGraphicsInfos>
+        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="350" Width="700" BorderColor="-16777216" FillColor="-1">
+          <Coordinates XCoordinate="0" YCoordinate="0" />
+        </NodeGraphicsInfo>
+      </NodeGraphicsInfos>
+    </Pool>
+    <Pool Id="f9a8007f-bf64-4c57-8b7e-f86c61cdf135" Name="Solicitud de Licencia de Vacaciones" Process="a3adf8c7-9cc0-4183-b0da-bb8ad19fa578" BoundaryVisible="true">
+      <Lanes>
+        <Lane Id="35c8538b-0d9f-4b39-9e4b-59c325a39c53" Name="Empleado" ParentPool="f9a8007f-bf64-4c57-8b7e-f86c61cdf135">
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="151.38572692871094" Width="1025" BorderColor="-11513776" FillColor="-1">
+              <Coordinates XCoordinate="50" YCoordinate="0" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Lane>
+        <Lane Id="9828fbf3-6862-4dc5-9674-b28caa2b3a10" Name="Jefe" ParentPool="f9a8007f-bf64-4c57-8b7e-f86c61cdf135">
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="157" Width="1025" BorderColor="-11513776" FillColor="-1">
+              <Coordinates XCoordinate="50" YCoordinate="151.38572692871094" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Lane>
+        <Lane Id="e0d1cefa-a545-4964-89ae-e183d7e078c4" Name="Departamento Administrativo" ParentPool="f9a8007f-bf64-4c57-8b7e-f86c61cdf135">
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="200" Width="1025" BorderColor="-11513776" FillColor="-1">
+              <Coordinates XCoordinate="50" YCoordinate="308.3857421875" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Lane>
+      </Lanes>
+      <NodeGraphicsInfos>
+        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="508.3857421875" Width="1075" BorderColor="-16777216" FillColor="-1">
+          <Coordinates XCoordinate="40" YCoordinate="20" />
+        </NodeGraphicsInfo>
+      </NodeGraphicsInfos>
+    </Pool>
+  </Pools>
+  <Associations />
+  <Artifacts />
+  <WorkflowProcesses>
+    <WorkflowProcess Id="c6eb8593-b6c1-4b0a-a282-c07a2a3f716d">
+      <ProcessHeader>
+        <Created>2013-08-30T04:55:18.6501935+02:00</Created>
+        <Description />
+      </ProcessHeader>
+      <RedefinableHeader>
+        <Author />
+        <Version />
+        <Countrykey>CO</Countrykey>
+      </RedefinableHeader>
+      <ActivitySets />
+      <DataInputOutputs />
+      <ExtendedAttributes />
+    </WorkflowProcess>
+    <WorkflowProcess Id="a3adf8c7-9cc0-4183-b0da-bb8ad19fa578" Name="Solicitud de Licencia de Vacaciones">
+      <ProcessHeader>
+        <Created>2013-08-30T04:55:18.6501935+02:00</Created>
+        <Description>&lt;p&gt;&lt;span style="font-family:Segoe UI;font-size:8pt;"&gt;El proceso de Solicitud de Vacaciones inicia cuando cualquier empleado de la organizaci&amp;#243;n presenta una solicitud de vacaciones, una vez &amp;#233;sta es registrada, es recibida por el supervisor inmediato del empleado que solicita las vacaciones, el supervisor debe aprobar o rechazar la solicitud; si la solicitud es rechazada la aplicaci&amp;#243;n env&amp;#237;a un mensaje con la informaci&amp;#243;n del rechazo, de lo contrario, si la solicitud es aprobada, ir&amp;#225; a la revisi&amp;#243;n final a cargo del Departamento de Recursos Humanos para que posteriormente se ejecute la actualizaci&amp;#243;n en el Sistema de Vacaciones.&lt;/span&gt;&lt;/p&gt;</Description>
+      </ProcessHeader>
+      <RedefinableHeader>
+        <Author />
+        <Version />
+        <Countrykey>CO</Countrykey>
+      </RedefinableHeader>
+      <ActivitySets />
+      <DataInputOutputs />
+      <Activities>
+        <Activity Id="0018c82d-1190-4243-bf90-54751a257ada" Name="">
+          <Description />
+          <Event>
+            <StartEvent Trigger="None" />
+          </Event>
+          <Documentation />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="30" Width="30" BorderColor="-10311914" FillColor="-1638505">
+              <Coordinates XCoordinate="140" YCoordinate="85" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Activity>
+        <Activity Id="51642e6a-3cf7-4925-bbe0-86e5edf7b481" Name="Verificar Dias de Vacaciones Disponibles">
+          <Description>&lt;p&gt;&lt;span style="font-family:Segoe UI;font-size:8pt;"&gt;Servicio web que conecta al sistema interno para obtener los d&amp;#237;as de vacaciones disponibles para el solicitante &lt;/span&gt;&lt;/p&gt;
+		&lt;p&gt;&amp;nbsp;&lt;/p&gt;</Description>
+          <Implementation>
+            <Task>
+              <TaskService />
+            </Task>
+          </Implementation>
+          <Performers />
+          <Documentation>&lt;p&gt;&lt;span style="font-family:Segoe UI;font-size:8pt;"&gt;Servicio web que conecta al sistema interno para obtener los d&amp;#237;as de vacaciones disponibles para el solicitante &lt;/span&gt;&lt;/p&gt;
+		&lt;p&gt;&amp;nbsp;&lt;/p&gt;</Documentation>
+          <Loop LoopType="None" />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="60" Width="90" BorderColor="-16553830" FillColor="-1249281">
+              <Coordinates XCoordinate="200" YCoordinate="70" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="Acciones_x0020_ejecutadas_x0020_al_x0020_entrar" Value="&lt;p&gt;&lt;span style=&quot;font-family:Segoe UI;font-size:8pt;&quot;&gt;Regla para establecer el solicitante y fecha de solicitud&lt;/span&gt;&lt;/p&gt;" />
+            <ExtendedAttribute Name="Acciones_x0020_ejecutadas_x0020_al_x0020_guardar" Value="&lt;p&gt;&amp;nbsp;&lt;/p&gt;" />
+            <ExtendedAttribute Name="Acciones_x0020_ejecutadas_x0020_al_x0020_salir" Value="&lt;p&gt;&amp;nbsp;&lt;/p&gt;" />
+            <ExtendedAttribute Name="Entrada_x0020_WS" Value="&lt;p&gt;&lt;span style=&quot;font-family:Segoe UI;font-size:8pt;&quot;&gt;Nombre del solicitante&lt;/span&gt;&lt;/p&gt;" />
+            <ExtendedAttribute Name="Salida_x0020_WS" Value="&lt;p&gt;&lt;span style=&quot;font-family:Segoe UI;font-size:8pt;&quot;&gt;N&amp;#250;mero de d&amp;#237;as de vacaciones disponibles&lt;/span&gt;&lt;/p&gt;" />
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="20801994-e5e6-4219-a364-6d66f2c4c966" Name="Registrar Solicitud de Licencia de Vacaciones">
+          <Description>&lt;p&gt;&lt;span style="font-family:Segoe UI;font-size:8pt;"&gt;El empleado debe llenar la forma de Registro de Solicitud de Licencia de Vacaciones para presentar la solicitud de vacaciones.&lt;/span&gt;&lt;/p&gt;</Description>
+          <Implementation>
+            <Task />
+          </Implementation>
+          <Performers>
+            <Performer>5f8b49cb-605f-4de3-b7ae-e2399fb7b361</Performer>
+          </Performers>
+          <Documentation>&lt;p&gt;&lt;span style="font-family:Segoe UI;font-size:8pt;"&gt;El empleado debe llenar la forma de Registro de Solicitud de Licencia de Vacaciones para presentar la solicitud de vacaciones.&lt;/span&gt;&lt;/p&gt;</Documentation>
+          <Loop LoopType="None" />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="63" Width="90" BorderColor="-16553830" FillColor="-1249281">
+              <Coordinates XCoordinate="320" YCoordinate="68.5" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="Duración" Value="1 Día" />
+            <ExtendedAttribute Name="Acciones_x0020_ejecutadas_x0020_al_x0020_entrar" Value="&lt;p&gt;&lt;span style=&quot;font-family:Tahoma;font-size:8pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;" />
+            <ExtendedAttribute Name="Acciones_x0020_ejecutadas_x0020_al_x0020_guardar" Value="&lt;p&gt;&lt;span style=&quot;font-family:Tahoma;font-size:8pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;" />
+            <ExtendedAttribute Name="Acciones_x0020_ejecutadas_x0020_al_x0020_salir" Value="&lt;p&gt;&lt;span style=&quot;color:#595959;font-family:Segoe UI;font-size:10pt;&quot;&gt;Regla para validar que los d&amp;#237;as solicitados est&amp;#233;n entre el m&amp;#237;nimo y m&amp;#225;ximo permitido por la pol&amp;#237;tica de la compa&amp;#241;&amp;#237;a&lt;/span&gt;&lt;/p&gt;&#xA;		&lt;p&gt;&amp;nbsp;&lt;/p&gt;" />
+            <ExtendedAttribute Name="Form" Value="solicitud.png" />
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="1d335a89-751a-44a4-8c6d-d2faa9d7e6d1" Name="¿Desistir?">
+          <Description>&lt;p&gt;&lt;span style="font-family:Tahoma;font-size:8pt;"&gt; &lt;/span&gt;&lt;/p&gt;</Description>
+          <Route />
+          <Documentation>&lt;p&gt;&lt;span style="font-family:Tahoma;font-size:8pt;"&gt; &lt;/span&gt;&lt;/p&gt;</Documentation>
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="40" Width="40" BorderColor="-5855715" FillColor="-52">
+              <Coordinates XCoordinate="480" YCoordinate="80" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Activity>
+        <Activity Id="4c175f45-7ad0-4134-b8fb-727eec961282" Name="">
+          <Description />
+          <Event>
+            <EndEvent Result="None" />
+          </Event>
+          <Documentation />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="30" Width="30" BorderColor="-6750208" FillColor="-1135958">
+              <Coordinates XCoordinate="560" YCoordinate="85" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Activity>
+        <Activity Id="241fff08-6b3b-4722-ae06-58de1591810c" Name="Aprobar Solicitud de Licencia de Vacaciones">
+          <Description>&lt;p&gt;&lt;span style="font-family:Segoe UI;font-size:8pt;"&gt;El jefe del solicitante debe aprobar, rechazar o solicitar cambios a la solicitud de licencia de vacaciones.&lt;/span&gt;&lt;/p&gt;</Description>
+          <Implementation>
+            <Task />
+          </Implementation>
+          <Performers>
+            <Performer>4b0c02db-9d9b-46b2-9e9f-dd890a0813b8</Performer>
+          </Performers>
+          <Documentation>&lt;p&gt;&lt;span style="font-family:Segoe UI;font-size:8pt;"&gt;El jefe del solicitante debe aprobar, rechazar o solicitar cambios a la solicitud de licencia de vacaciones.&lt;/span&gt;&lt;/p&gt;</Documentation>
+          <Loop LoopType="None" />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="64" Width="90" BorderColor="-16553830" FillColor="-1249281">
+              <Coordinates XCoordinate="455" YCoordinate="231.38572692871094" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="Duración" Value="1 Día" />
+            <ExtendedAttribute Name="Acciones_x0020_ejecutadas_x0020_al_x0020_entrar" Value="&lt;p&gt;&amp;nbsp;&lt;/p&gt;" />
+            <ExtendedAttribute Name="Acciones_x0020_ejecutadas_x0020_al_x0020_guardar" Value="&lt;p&gt;&amp;nbsp;&lt;/p&gt;" />
+            <ExtendedAttribute Name="Acciones_x0020_ejecutadas_x0020_al_x0020_salir" Value="&lt;p&gt;&lt;span style=&quot;font-family:Segoe UI;font-size:8pt;&quot;&gt;Regla para establecer fecha de aprobaci&amp;#243;n&lt;/span&gt;&lt;/p&gt;" />
+            <ExtendedAttribute Name="Form" Value="aprobacion.png" />
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="e51c68b3-c187-496b-9bc4-2c19506ed67b" Name="¿Aprobado?">
+          <Description>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</Description>
+          <Route />
+          <Documentation>&lt;p&gt;&amp;nbsp;&lt;/p&gt;</Documentation>
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="40" Width="40" BorderColor="-5855715" FillColor="-52">
+              <Coordinates XCoordinate="600" YCoordinate="243.38572692871094" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Activity>
+        <Activity Id="ae80bfe7-024e-4cc0-844d-64917fe22cf2" Name="">
+          <Description />
+          <Event>
+            <EndEvent Result="None" />
+          </Event>
+          <Documentation />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="30" Width="30" BorderColor="-6750208" FillColor="-1135958">
+              <Coordinates XCoordinate="840" YCoordinate="248.38572692871094" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Activity>
+        <Activity Id="68e4483b-2a9b-4689-8ecc-06af4cfecd75" Name="Actualizar Sistema de Nómina">
+          <Description>Servicio web para actualizar el sistema de nómina</Description>
+          <Implementation>
+            <Task>
+              <TaskService />
+            </Task>
+          </Implementation>
+          <Performers />
+          <Documentation>Servicio web para actualizar el sistema de nómina</Documentation>
+          <Loop LoopType="None" />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="60" Width="90" BorderColor="-16553830" FillColor="-1249281">
+              <Coordinates XCoordinate="700" YCoordinate="368.3857421875" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="Entrada_x0020_WS" Value="Número de identificación del Solicitante&#xA;Nombre de Usuario del Solicitante&#xA;Fecha de Solicitud&#xA;Días solicitados&#xA;" />
+            <ExtendedAttribute Name="Salida_x0020_WS" Value="Fecha de actualización del sistema de nómina&#xA;Código del sistema de nómina" />
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="72e797f3-e0e3-4ec0-a45a-1f52e7a04b0b" Name="Enviar Mensaje de Rechazo">
+          <Description>Se envía un correo electrónico notificando el rechazo de la solicitud.</Description>
+          <Implementation>
+            <Task>
+              <TaskScript>
+                <Script>Estimado Solicitante,Lamentamos informarle que su solicitud de vacaciones ha sido rechazada, la razón es la siguiente:&lt;Reject Reason&gt;&lt;Rejection comments&gt;Cordialmente,Administración</Script>
+              </TaskScript>
+            </Task>
+          </Implementation>
+          <Performers />
+          <Documentation>Se envía un correo electrónico notificando el rechazo de la solicitud.</Documentation>
+          <Loop LoopType="None" />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="60" Width="90" BorderColor="-16553830" FillColor="-1249281">
+              <Coordinates XCoordinate="680" YCoordinate="233.38572692871094" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Activity>
+        <Activity Id="af47bff5-e229-4cbf-96e6-5ad5476efc7d" Name="Enviar Mensaje de Aprobación">
+          <Description>Se envía un correo electrónico al solicitante y a su jefe notificando la aprobación de la solicitud de vacaciones.</Description>
+          <Implementation>
+            <Task>
+              <TaskScript>
+                <Script>Estimado Solicitante,Su solicitud de vacaciones de &lt;starting date&gt; a &lt;ending date&gt; ha sido aprobado por su jefe y revisado por la administración. Cordialmente,Administración.</Script>
+              </TaskScript>
+            </Task>
+          </Implementation>
+          <Performers />
+          <Documentation>Se envía un correo electrónico al solicitante y a su jefe notificando la aprobación de la solicitud de vacaciones.</Documentation>
+          <Loop LoopType="None" />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="60" Width="90" BorderColor="-16553830" FillColor="-1249281">
+              <Coordinates XCoordinate="575" YCoordinate="368.3857421875" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Activity>
+        <Activity Id="e076ff08-963e-4f85-a02d-5a8b55e2c1ad" Name="Actualizar Sistema de Nómina Manualmente">
+          <Description>&lt;p&gt;&lt;span style="font-family:Segoe UI;font-size:8pt;"&gt;Si ocurre un error en el env&amp;#237;o de la interfaz mientras se conectaba al sistema de n&amp;#243;mina, se habilita esta actividad. En esta se actualiza el sistema manualmente.&lt;/span&gt;&lt;/p&gt;
+		&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+		&lt;p&gt;&amp;nbsp;&lt;/p&gt;</Description>
+          <Implementation>
+            <Task />
+          </Implementation>
+          <Performers>
+            <Performer>a28474ca-c66d-499b-bd65-3b168cdd5135</Performer>
+          </Performers>
+          <Documentation>&lt;p&gt;&lt;span style="font-family:Segoe UI;font-size:8pt;"&gt;Si ocurre un error en el env&amp;#237;o de la interfaz mientras se conectaba al sistema de n&amp;#243;mina, se habilita esta actividad. En esta se actualiza el sistema manualmente.&lt;/span&gt;&lt;/p&gt;
+		&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+		&lt;p&gt;&amp;nbsp;&lt;/p&gt;</Documentation>
+          <Loop LoopType="None" />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="67" Width="90" BorderColor="-16553830" FillColor="-1249281">
+              <Coordinates XCoordinate="861" YCoordinate="428" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="Duración" Value="1 Dia" />
+            <ExtendedAttribute Name="Acciones_x0020_ejecutadas_x0020_al_x0020_entrar" Value="&lt;p&gt;&amp;nbsp;&lt;/p&gt;" />
+            <ExtendedAttribute Name="Acciones_x0020_ejecutadas_x0020_al_x0020_guardar" Value="&lt;p&gt;&amp;nbsp;&lt;/p&gt;" />
+            <ExtendedAttribute Name="Acciones_x0020_ejecutadas_x0020_al_x0020_salir" Value="&lt;p&gt;&amp;nbsp;&lt;/p&gt;" />
+            <ExtendedAttribute Name="Form" Value="error.png" />
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="862b5b82-8ded-4d72-a45b-3a1ce1a46341" Name="">
+          <Description />
+          <Event>
+            <EndEvent Result="None" />
+          </Event>
+          <Documentation />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="30" Width="30" BorderColor="-6750208" FillColor="-1135958">
+              <Coordinates XCoordinate="1040" YCoordinate="383.3857421875" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Activity>
+        <Activity Id="0c407e6e-fc46-40c7-9fbf-862a8e47a2d6" Name="">
+          <Description />
+          <Event>
+            <IntermediateEvent Trigger="Error" Target="68e4483b-2a9b-4689-8ecc-06af4cfecd75" IsAttached="true">
+              <ResultError />
+            </IntermediateEvent>
+          </Event>
+          <Documentation />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="30" Width="30" BorderColor="-6909623" FillColor="-66833">
+              <Coordinates XCoordinate="710" YCoordinate="428" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Activity>
+      </Activities>
+      <Transitions>
+        <Transition Id="4ed37a2c-bcbe-40cb-8709-e478721c5c0a" From="0018c82d-1190-4243-bf90-54751a257ada" To="51642e6a-3cf7-4925-bbe0-86e5edf7b481" Name="">
+          <Condition />
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="0">
+              <Coordinates XCoordinate="170" YCoordinate="100" />
+              <Coordinates XCoordinate="200" YCoordinate="100" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="9b64c50e-501b-4c3b-9854-e4c22ce2b27c" From="51642e6a-3cf7-4925-bbe0-86e5edf7b481" To="20801994-e5e6-4219-a364-6d66f2c4c966" Name="">
+          <Condition />
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="0">
+              <Coordinates XCoordinate="290" YCoordinate="100" />
+              <Coordinates XCoordinate="305" YCoordinate="100" />
+              <Coordinates XCoordinate="305" YCoordinate="99" />
+              <Coordinates XCoordinate="320" YCoordinate="99" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="5d821b1e-e1c3-4d7d-880d-60d95ae89c92" From="20801994-e5e6-4219-a364-6d66f2c4c966" To="1d335a89-751a-44a4-8c6d-d2faa9d7e6d1" Name="">
+          <Condition />
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="0">
+              <Coordinates XCoordinate="410" YCoordinate="99" />
+              <Coordinates XCoordinate="447" YCoordinate="99" />
+              <Coordinates XCoordinate="447" YCoordinate="100" />
+              <Coordinates XCoordinate="480" YCoordinate="100" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="f24e8c7b-03fb-4b68-87de-97d1d8a9277a" From="1d335a89-751a-44a4-8c6d-d2faa9d7e6d1" To="4c175f45-7ad0-4134-b8fb-727eec961282" Name="Si">
+          <Condition Type="CONDITION">
+            <Expression>Si el empleado decide no solicitar las vacaciones</Expression>
+          </Condition>
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="0">
+              <Coordinates XCoordinate="520" YCoordinate="100" />
+              <Coordinates XCoordinate="560" YCoordinate="100" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="3503e5c6-cc3d-445a-93f3-816140e75819" From="1d335a89-751a-44a4-8c6d-d2faa9d7e6d1" To="241fff08-6b3b-4722-ae06-58de1591810c" Name="No">
+          <Condition Type="CONDITION">
+            <Expression>Si el empleado decide solicitar las vacaciones</Expression>
+          </Condition>
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="0">
+              <Coordinates XCoordinate="500" YCoordinate="120" />
+              <Coordinates XCoordinate="500" YCoordinate="231" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="25f06e6a-8211-4f90-896d-3518fb78b549" From="241fff08-6b3b-4722-ae06-58de1591810c" To="e51c68b3-c187-496b-9bc4-2c19506ed67b" Name="">
+          <Condition />
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="0">
+              <Coordinates XCoordinate="545" YCoordinate="263" />
+              <Coordinates XCoordinate="600" YCoordinate="263" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="46296897-da0d-4e16-a193-1dd826296458" From="e51c68b3-c187-496b-9bc4-2c19506ed67b" To="72e797f3-e0e3-4ec0-a45a-1f52e7a04b0b" Name="No">
+          <Condition Type="CONDITION">
+            <Expression>Si el Jefe rechaza el reporte de gastos.</Expression>
+          </Condition>
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="0">
+              <Coordinates XCoordinate="640" YCoordinate="263" />
+              <Coordinates XCoordinate="680" YCoordinate="263" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="dd2e39cb-45c0-4e67-a10a-d96be9a72c1f" From="72e797f3-e0e3-4ec0-a45a-1f52e7a04b0b" To="ae80bfe7-024e-4cc0-844d-64917fe22cf2" Name="">
+          <Condition />
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="0">
+              <Coordinates XCoordinate="770" YCoordinate="263" />
+              <Coordinates XCoordinate="840" YCoordinate="263" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="0de4a3b4-d6f7-4880-8900-f82afd8e37ef" From="e51c68b3-c187-496b-9bc4-2c19506ed67b" To="af47bff5-e229-4cbf-96e6-5ad5476efc7d" Name="Si">
+          <Condition Type="CONDITION">
+            <Expression>Si el Jefe aprueba el reporte de gastos.</Expression>
+          </Condition>
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="0">
+              <Coordinates XCoordinate="620" YCoordinate="283" />
+              <Coordinates XCoordinate="620" YCoordinate="368" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="3e9a7eab-cf5e-4a3b-90dc-0f3df2f9206c" From="68e4483b-2a9b-4689-8ecc-06af4cfecd75" To="862b5b82-8ded-4d72-a45b-3a1ce1a46341" Name="">
+          <Condition />
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="0">
+              <Coordinates XCoordinate="790" YCoordinate="398" />
+              <Coordinates XCoordinate="1040" YCoordinate="398" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="789b9daa-ab34-48d3-bc23-1e8b62f24afe" From="e076ff08-963e-4f85-a02d-5a8b55e2c1ad" To="862b5b82-8ded-4d72-a45b-3a1ce1a46341" Name="">
+          <Condition />
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="0">
+              <Coordinates XCoordinate="951" YCoordinate="461" />
+              <Coordinates XCoordinate="975" YCoordinate="461" />
+              <Coordinates XCoordinate="975" YCoordinate="398" />
+              <Coordinates XCoordinate="1040" YCoordinate="398" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="77e21e0b-c1f4-4e49-a93c-24e04ca2aa40" From="af47bff5-e229-4cbf-96e6-5ad5476efc7d" To="68e4483b-2a9b-4689-8ecc-06af4cfecd75" Name="">
+          <Condition />
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="0">
+              <Coordinates XCoordinate="665" YCoordinate="398" />
+              <Coordinates XCoordinate="700" YCoordinate="398" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="1938f6b9-7d06-4661-b509-a46505a8e448" From="0c407e6e-fc46-40c7-9fbf-862a8e47a2d6" To="e076ff08-963e-4f85-a02d-5a8b55e2c1ad">
+          <Condition />
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="-16777216">
+              <Coordinates XCoordinate="710" YCoordinate="428" />
+              <Coordinates XCoordinate="710" YCoordinate="461" />
+              <Coordinates XCoordinate="861" YCoordinate="461" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="14d6ef90-339a-4e0e-a4ae-8a468c755ff2" From="e51c68b3-c187-496b-9bc4-2c19506ed67b" To="20801994-e5e6-4219-a364-6d66f2c4c966" Name="Cambio de Solicitud">
+          <Condition Type="CONDITION">
+            <Expression>Si el jefe solicita cambios en la solicitud. </Expression>
+          </Condition>
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="0">
+              <Coordinates XCoordinate="620" YCoordinate="243" />
+              <Coordinates XCoordinate="620" YCoordinate="46" />
+              <Coordinates XCoordinate="365" YCoordinate="46" />
+              <Coordinates XCoordinate="365" YCoordinate="68" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+      </Transitions>
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="Global_x0020_Form" Value="global.png" />
+        <ExtendedAttribute Name="Data_x0020_Model" Value="Data Model.jpg" />
+      </ExtendedAttributes>
+    </WorkflowProcess>
+  </WorkflowProcesses>
+  <ExtendedAttributes />
+</Package>
