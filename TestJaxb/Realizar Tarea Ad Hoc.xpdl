@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="ff812c54-00c1-4776-bac8-83b80877258e" Name="Realizar Tarea Ad Hoc" xmlns="http://www.wfmc.org/2009/XPDL2.2">
+  <PackageHeader>
+    <XPDLVersion>2.2</XPDLVersion>
+    <Vendor>Bizagi Process Modeler.</Vendor>
+    <Created>2012-01-06T14:52:25.0270036-02:00</Created>
+    <ModificationDate>2012-12-13T18:00:13.9056604-02:00</ModificationDate>
+    <Description>Realizar Tarea Ad Hoc</Description>
+    <Documentation />
+  </PackageHeader>
+  <RedefinableHeader>
+    <Author>Bizagi Process Modeler</Author>
+    <Version>1.0</Version>
+    <Countrykey>CO</Countrykey>
+  </RedefinableHeader>
+  <ExternalPackages />
+  <Participants>
+    <Participant Id="096737f6-d284-462e-995b-f441c24278ff" Name="Responsable">
+      <ParticipantType Type="ROLE" />
+      <Description>Persona responsable de ejecutar una tarea.</Description>
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="Responsable" />
+      </ExtendedAttributes>
+    </Participant>
+    <Participant Id="4162bcd1-d7b6-4b0e-a8c2-941c62612117" Name="Secretario del comité">
+      <ParticipantType Type="ROLE" />
+      <Description>Persona asignada para realizar el acta de la reunión del comité. </Description>
+      <ExtendedAttributes>
+        <ExtendedAttribute Name="Secretario_del_comité" />
+      </ExtendedAttributes>
+    </Participant>
+  </Participants>
+  <Pools>
+    <Pool Id="8fdfa2fe-30a6-41d8-bcf5-8b3e36fafc41" Name="Main Process" Process="0e05b78c-db8e-469e-94e4-4ccaf3e301ef" BoundaryVisible="false">
+      <Lanes />
+      <NodeGraphicsInfos>
+        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="350" Width="700" BorderColor="-16777216" FillColor="-1">
+          <Coordinates XCoordinate="0" YCoordinate="0" />
+        </NodeGraphicsInfo>
+      </NodeGraphicsInfos>
+    </Pool>
+    <Pool Id="619cedf9-74dd-4d82-8738-82e758c68a06" Name="Realizar Tarea Ad Hoc" Process="a4a21e7f-1e4f-43db-b9eb-11bfcce307b9" BoundaryVisible="true">
+      <Lanes />
+      <NodeGraphicsInfos>
+        <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="217" Width="463" BorderColor="-16777216" FillColor="-1">
+          <Coordinates XCoordinate="7" YCoordinate="25" />
+        </NodeGraphicsInfo>
+      </NodeGraphicsInfos>
+    </Pool>
+  </Pools>
+  <Associations />
+  <Artifacts />
+  <WorkflowProcesses>
+    <WorkflowProcess Id="0e05b78c-db8e-469e-94e4-4ccaf3e301ef" Name="Main Process">
+      <ProcessHeader>
+        <Created>2013-08-29T22:23:36.489737-03:00</Created>
+        <Description />
+      </ProcessHeader>
+      <RedefinableHeader>
+        <Author />
+        <Version />
+        <Countrykey>CO</Countrykey>
+      </RedefinableHeader>
+      <ActivitySets />
+      <DataInputOutputs />
+      <ExtendedAttributes />
+    </WorkflowProcess>
+    <WorkflowProcess Id="a4a21e7f-1e4f-43db-b9eb-11bfcce307b9" Name="Realizar Tarea Ad Hoc">
+      <ProcessHeader>
+        <Created>2013-08-29T22:23:36.489737-03:00</Created>
+        <Description />
+      </ProcessHeader>
+      <RedefinableHeader>
+        <Author />
+        <Version />
+        <Countrykey>CO</Countrykey>
+      </RedefinableHeader>
+      <ActivitySets />
+      <DataInputOutputs />
+      <Activities>
+        <Activity Id="6c5e1812-0eb1-4d61-82cd-e0020f563078" Name="">
+          <Description />
+          <Event>
+            <StartEvent Trigger="None" />
+          </Event>
+          <Documentation />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="30" Width="30" BorderColor="-10311914" FillColor="-1638505">
+              <Coordinates XCoordinate="123" YCoordinate="114" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Activity>
+        <Activity Id="5e22248a-7108-45e7-8833-e7198886c2ad" Name="Ejecutar Tarea">
+          <Description>&lt;p&gt;&lt;span style="font-family:Segoe UI;font-size:8pt;"&gt; La actividad del subproceso es ejecutada por la persona escogida durante la creaci&amp;#243;n de la tarea. &lt;/span&gt;&lt;/p&gt;
+		&lt;p&gt;&lt;span style="font-family:Segoe UI;font-size:8pt;"&gt;Es esta actividad el ejecutante debe incluir informaci&amp;#243;n relacionada con el desarrollo de la actividad, es decir, incluir los comentarios sobre la ejecuci&amp;#243;n de la tarea y el estado de esta. Esta informaci&amp;#243;n ser&amp;#225; actualizada autom&amp;#225;ticamente en la forma global del proceso y en el evento Crear Tarea Ad Hoc. &lt;/span&gt;&lt;/p&gt;
+		&lt;p&gt;&lt;span style="font-family:Segoe UI;font-size:8pt;"&gt; Se crearan tantos casos del sub proceso Realizar Tarea Ad Hoc como sean requeridos por los usuarios. Tan pronto como una nueva tarea es registrada, un nuevo caso del sub proceso Realizar Tarea Ad Hoc ser&amp;#225; abierto. Los sub proceso Realizar Tarea Ad Hoc son independientes entre s&amp;#237;. &lt;/span&gt;&lt;/p&gt;
+		&lt;p&gt;&amp;nbsp;&lt;/p&gt;</Description>
+          <Implementation>
+            <Task />
+          </Implementation>
+          <Performers />
+          <Documentation>&lt;p&gt;&lt;span style="font-family:Segoe UI;font-size:8pt;"&gt; La actividad del subproceso es ejecutada por la persona escogida durante la creaci&amp;#243;n de la tarea. &lt;/span&gt;&lt;/p&gt;
+		&lt;p&gt;&lt;span style="font-family:Segoe UI;font-size:8pt;"&gt;Es esta actividad el ejecutante debe incluir informaci&amp;#243;n relacionada con el desarrollo de la actividad, es decir, incluir los comentarios sobre la ejecuci&amp;#243;n de la tarea y el estado de esta. Esta informaci&amp;#243;n ser&amp;#225; actualizada autom&amp;#225;ticamente en la forma global del proceso y en el evento Crear Tarea Ad Hoc. &lt;/span&gt;&lt;/p&gt;
+		&lt;p&gt;&lt;span style="font-family:Segoe UI;font-size:8pt;"&gt; Se crearan tantos casos del sub proceso Realizar Tarea Ad Hoc como sean requeridos por los usuarios. Tan pronto como una nueva tarea es registrada, un nuevo caso del sub proceso Realizar Tarea Ad Hoc ser&amp;#225; abierto. Los sub proceso Realizar Tarea Ad Hoc son independientes entre s&amp;#237;. &lt;/span&gt;&lt;/p&gt;
+		&lt;p&gt;&amp;nbsp;&lt;/p&gt;</Documentation>
+          <Loop LoopType="None" />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="60" Width="90" BorderColor="-16553830" FillColor="-1249281">
+              <Coordinates XCoordinate="203" YCoordinate="99" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes>
+            <ExtendedAttribute Name="Asignaciones" Value="Table" />
+            <ExtendedAttribute Name="Notificar_x0020_asignación" Value="Si" />
+            <ExtendedAttribute Name="Formas" Value="Table" />
+            <ExtendedAttribute Name="Comportamientos_x0020_de_x0020_las_x0020_formas" Value="Table" />
+            <ExtendedAttribute Name="Acciones" Value="Table" />
+            <ExtendedAttribute Name="Notificaciones" Value="Table" />
+          </ExtendedAttributes>
+        </Activity>
+        <Activity Id="2c6ae1a4-d904-4e2f-a0bd-b76d944acb44" Name="">
+          <Description />
+          <Event>
+            <EndEvent Result="None" />
+          </Event>
+          <Documentation />
+          <NodeGraphicsInfos>
+            <NodeGraphicsInfo ToolId="BizAgi_Process_Modeler" Height="30" Width="30" BorderColor="-6750208" FillColor="-1135958">
+              <Coordinates XCoordinate="354" YCoordinate="114" />
+            </NodeGraphicsInfo>
+          </NodeGraphicsInfos>
+          <ExtendedAttributes />
+        </Activity>
+      </Activities>
+      <Transitions>
+        <Transition Id="7a74fc77-5cc5-4748-9477-04b2fa7c652f" From="6c5e1812-0eb1-4d61-82cd-e0020f563078" To="5e22248a-7108-45e7-8833-e7198886c2ad">
+          <Condition />
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="0">
+              <Coordinates XCoordinate="153" YCoordinate="129" />
+              <Coordinates XCoordinate="203" YCoordinate="129" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+        <Transition Id="e4743199-e1b9-4ec2-b472-578c2387b47f" From="5e22248a-7108-45e7-8833-e7198886c2ad" To="2c6ae1a4-d904-4e2f-a0bd-b76d944acb44">
+          <Condition />
+          <Description />
+          <ConnectorGraphicsInfos>
+            <ConnectorGraphicsInfo ToolId="BizAgi_Process_Modeler" BorderColor="0">
+              <Coordinates XCoordinate="293" YCoordinate="129" />
+              <Coordinates XCoordinate="354" YCoordinate="129" />
+            </ConnectorGraphicsInfo>
+          </ConnectorGraphicsInfos>
+          <ExtendedAttributes />
+        </Transition>
+      </Transitions>
+      <ExtendedAttributes />
+    </WorkflowProcess>
+  </WorkflowProcesses>
+  <ExtendedAttributes />
+</Package>
